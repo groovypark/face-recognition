@@ -42,3 +42,7 @@ def upload_file():
             return jsonify({"message": message}), response.status_code
         return jsonify(response.json()), response.status_code
     return abort(400)
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
